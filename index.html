@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Witch Glitch Fest 2022</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+            @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+            @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&display=swap');
+
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                font-family: 'Major Mono Display', monospace;
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 1.4;
+                margin: 0;
+                text-align: center;
+                letter-spacing: 4px;
+                color: white;
+            }
+
+            #description {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 16px;
+                text-align: center;
+                margin: 80px 300px 0px 300px;
+                color: white;
+            }
+
+            #witchglitch {
+                font-family: 'Megrim', monospace;
+                font-size: 18px;
+                letter-spacing: 4px;
+                color: white;
+            }
+
+            .form-control {
+                text-align: center;
+                margin: 25px 0px 0px 25px;
+                font-family: 'Roboto Mono', monospace;
+                display: block;
+                font-size: 14px;
+                color: white;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="title" class="survey-title">Witch Glitch Fest 2022</h1>
+        <p id="description">Fill out this survey for a chance to win a spot performing at the first annual WITCH GLITCH
+            FEST (October 28 and 29, 2022 in gloomy Los Angeles, CA), a gathering and celebration of witch house music
+            as well as art, film, and all things <span id="witchglitch">witchy and glitchy</span>.) </p>
+
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name" id="name-label">Band name:</label>
+                <input type="text" id="name" placeholder="Enter your band name" required />
+            </div>
+            <div class="form-control">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-control">
+                <label for="location" id="location-label">Location:</label>
+                <input type="text" id="location" placeholder="City, State" required />
+            </div>
+            <div class="form-control">
+                <label for="number" id="number-label">Number of band members:</label>
+                <input type="number" id="number" min="1" max="99" placeholder="# of band members" required />
+            </div>
+            <div class="form-control">
+                <label for="dropdown">Need to borrow a drum set?
+                </label>
+                <select id="dropdown">
+                    <option>--Please choose an option--</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <p>Choice of complimentary eyeliner:</p>
+                <input type="radio" id="black" name="eyeliner" value="black" />
+                <label for="black" id="black">Black</label>
+                <input type="radio" id="grey" name="eyeliner" value="grey" />
+                <label for="grey" id="grey">Grey</label>
+            </div>
+            <div class="form-control">
+                <p>Check which goth accessories band members will require in dressing room:</p>
+                <input type="checkbox" value="item1" />
+                <label for="checkbox" name="item1">Clove cigarettes</label>
+                <input type="checkbox" name="" value="item2" />
+                <label for="checkbox" name="item2">Sage sticks</label>
+                <input type="checkbox" name="item3" value="item3" />
+                <label for="checkbox" name="">Velvet cloaks</label>
+                <input type="checkbox" name="item4" value="item4" />
+                <label for="checkbox" name="">Goblets and chalices</label>
+            </div>
+            <div class="form-control">
+                <label for="bandinfo" id="bandinfo">Tell us about your band/act:</label>
+                <textarea id="bandinfo" /></textarea>
+            </div>
+            <div class="form-control">
+                <button id="submit">Submit</button>
+                <label for="submit" name="submit" />
+            </div>
+        </form>
+    </body>
+
+    </html>
+</main>

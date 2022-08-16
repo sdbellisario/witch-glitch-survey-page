@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Megrim&display=swap');
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 4px;
+    color: white;
+}
+
+#description {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    text-align: center;
+    margin: 80px 300px 0px 300px;
+    color: white;
+}
+
+#witchglitch {
+    font-family: 'Megrim', monospace;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.form-control {
+    text-align: center;
+    margin: 25px 0px 0px 25px;
+    font-family: 'Roboto Mono', monospace;
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
